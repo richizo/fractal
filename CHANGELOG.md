@@ -7,6 +7,17 @@ may include breaking changes, each listed under a Breaking heading.
 
 ## [Unreleased]
 
+### Added
+
+- A `muse` agent backend (Muse): nodes can run `muse exec --json
+  --yolo` headlessly with fractal-minted session ids
+  (`fractal init --agent=muse`). Sessions resume in place and cannot be
+  forked. muse bills by subscription allowance, so its stream reports
+  per-model token totals but no dollar figure: muse steps record no cost,
+  and a cost cap on a muse node fails at launch instead of arming a ceiling
+  that could never trip — bound muse nodes with iteration and time caps.
+
+
 ## [1.4.0] - 2026-10-25
 
 ### Breaking
